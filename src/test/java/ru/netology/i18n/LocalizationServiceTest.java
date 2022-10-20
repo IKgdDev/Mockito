@@ -20,7 +20,7 @@ public class LocalizationServiceTest {
 
     @ParameterizedTest
     @MethodSource("getArguments")
-    void localeRussiaTest(Country country, String expected){
+    void localeTest(Country country, String expected){
         String actual = localizationServiceImpl.locale(country);
         Assertions.assertEquals(expected, actual);
     }
